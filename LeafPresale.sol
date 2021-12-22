@@ -117,7 +117,7 @@ contract LeafPresale {
         totalSold[msg.sender] += _amountIn;
     }
 
-    // Get tokens bought buy address
+    // Get tokens bought by address
     function currentLeaf(address buyer) external view returns (uint) {
         return totalSold[buyer];
     }
